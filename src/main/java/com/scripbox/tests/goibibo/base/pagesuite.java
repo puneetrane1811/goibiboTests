@@ -31,4 +31,8 @@ public class pagesuite {
         this.webDriver = new ChromeDriver();
 
     }
+    
+   
+    
+    
 }
