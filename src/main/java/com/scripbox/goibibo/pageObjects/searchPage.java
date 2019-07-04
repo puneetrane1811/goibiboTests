@@ -14,20 +14,31 @@ public class searchPage extends pageBase{
 	
 	public final static String pageTitle="Flight Ticket Booking";
 	
-	@FindBy(how = How.XPATH, using = "//*[@id=\"content\"]/div/div[2]/div/div[1]/div[2]/div[1]/div/span[1]")
+	@FindBy(how = How.CSS, using = ".fltSwitchOpt > .curPointFlt:nth-child(1)")
 	public WebElement oneWaySelector;
 	
-	@FindBy(how = How.XPATH, using = "//*[@id=\"gosuggest_inputSrc\"]")
+	@FindBy(how = How.CSS, using = ".fltSwitchOpt > .curPointFlt:nth-child(2)")
+	public WebElement roundTripSelector;
+	
+	@FindBy(how = How.CSS, using = ".fltSwitchOpt > .curPointFlt:nth-child(3)")
+	public WebElement multiTripSelector;
+	
+	@FindBy(how = How.CSS, using = "#gosuggest_inputSrc")
 	public WebElement fromAirport;
 	
-	@FindBy(how = How.XPATH, using = "//*[@id=\"gosuggest_inputDest\"]")
+	@FindBy(how = How.CSS, using = "#gosuggest_inputDest")
 	public WebElement toAirport;
-	
-	
+		
 	@FindBy(how = How.CSS, using = "css=.dF:nth-child(5) > .inputSrch")
 	public WebElement fromDate;
 	
 	@FindBy(how = How.CSS, using = "css=.dF:nth-child(6) > .inputSrch")
 	public WebElement toDate;
+	
+	@FindBy(how = How.CSS, using = "#gi_search_btn")
+	public WebElement search;
+	
+	@FindBy(how = How.CSS, using = "#student_fare_check")
+	public WebElement studentFareButton;
 
 }

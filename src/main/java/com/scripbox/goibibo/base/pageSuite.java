@@ -18,7 +18,7 @@ or define a new browser configuration like Firefox, IE, safari at a single locat
 
 public class pageSuite {
 
-    static WebDriver webDriver;
+    protected static WebDriver webDriver;
     private static Logger log;
     public static String url;
 
@@ -33,10 +33,6 @@ public class pageSuite {
         chromeOptions.addArguments("--log-level=3");
         // this.webDriver = new ChromeDriver(chromeOptions);
         webDriver = new ChromeDriver();
-        webDriver.get(globalPaths.url);
     }
 
-    public static void clickElement(String property) throws Exception {
-        webDriver.findElement(By.cssSelector(property)).click();
-    }
 }

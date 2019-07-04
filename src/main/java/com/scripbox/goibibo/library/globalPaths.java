@@ -14,7 +14,6 @@ public class globalPaths {
     String inputFile;
     String chromeDriver;
     String browser;
-    public static String url;
     String reporter;
     String screenShotLocation, errorScreenShotLocation, otherScreenShotLocation;
 
@@ -37,7 +36,6 @@ public class globalPaths {
     reporter = new File("").getAbsolutePath() + globalProps.getProperty("reporter");
     screenShotLocation = new File("").getAbsolutePath() + globalProps.getProperty("screenShotLocation");
     errorScreenShotLocation = new File("").getAbsolutePath() + globalProps.getProperty("errorScreenShotLocation");
-    url = globalProps.getProperty("url");
     browser = globalProps.getProperty("browser");
 }
 
@@ -65,8 +63,6 @@ public class globalPaths {
         return this.browser;
     }
 
-    public String getUrl() {
-        return this.url;
-    }
+
 
 }
