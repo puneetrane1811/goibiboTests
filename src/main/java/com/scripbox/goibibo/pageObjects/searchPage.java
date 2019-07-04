@@ -1,4 +1,4 @@
-package com.scripbox.tests.goibibo.pageObjects;
+package com.scripbox.goibibo.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,7 +24,7 @@ public class searchPage extends pageBase{
 	public WebElement toAirport;
 	
 	
-	@FindBy(how = How.CSS, using = "css=.dF:nth-child(8) > .inputSrch")
+	@FindBy(how = How.CSS, using = "css=.dF:nth-child(5) > .inputSrch")
 	public WebElement fromDate;
 	
 	@FindBy(how = How.CSS, using = "css=.dF:nth-child(6) > .inputSrch")

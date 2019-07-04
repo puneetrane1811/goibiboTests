@@ -1,4 +1,4 @@
-package com.scripbox.tests.goibibo.library;
+package com.scripbox.goibibo.library;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,7 +14,7 @@ public class globalPaths {
     String inputFile;
     String chromeDriver;
     String browser;
-    String url;
+    public static String url;
     String reporter;
     String screenShotLocation, errorScreenShotLocation, otherScreenShotLocation;
 

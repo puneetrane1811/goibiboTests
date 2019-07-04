@@ -1,4 +1,4 @@
-package com.scripbox.tests.goibibo.pageObjects;
+package com.scripbox.goibibo.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
